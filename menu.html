@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cafe Menu</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Dancing+Script:wght@700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style .css">
   <style>
     :root {
       --cream: #faf6f0;
@@ -16,34 +15,41 @@
       --blush: #e8c4a0;
       --rule: #d4b896;
     }
+    body {
+  background-color: #d0f0c0; /* mint green background */   
+   font-family: 'Georgia', serif;  /* new text font for the page */
 
+    color: #2e4a2b; /* dark green text */
+  margin: 0;
+  padding: 0; display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+    min-height: 100vh;       /* full viewport height */
+} 
+  li {
+    background-color: #d1b3ff;  /* menu item background */
+    color: #330066;  /* menu item text color */
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+    
+
+    
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    body {
-      background-color: var(--cream);
-      background-image:
-        radial-gradient(ellipse at 20% 0%, #f5dfc2 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 100%, #e8d5bc 0%, transparent 50%);
-      min-height: 100vh;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      padding: 60px 20px;
-      font-family: 'Cormorant Garamond', serif;
-    }
 
+    
     .page {
-      width: 100%;
-      max-width: 620px;
-      background: var(--warm-white);
-      padding: 64px 56px 72px;
-      box-shadow:
-        0 2px 4px rgba(44,26,14,0.06),
-        0 8px 32px rgba(44,26,14,0.10),
-        0 32px 80px rgba(44,26,14,0.08);
-      position: relative;
-      animation: fadeUp 0.8s ease both;
-    }
+    background-color: #f5e6ff; /* menu sheet color */
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+}
+    
 
     .page::before {
       content: '';
